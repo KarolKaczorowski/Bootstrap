@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pierwszy bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" style="padding: 25px;">
+            <h2>Okienko modalne z JQuery</h2>
+            <div class="row">
+                <div class="col">
+                    <!-- sekcja na wyświetlenie powiekszonych zdjęć -->
+                    
+                    <section class="modal fade" id="bigPicture">
+                        <div class="modal-dialog" style="width: 50%; max-width: 900px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Zdjęcie ;)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="bigPicture_img" src="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- zdjęcia zmniejszone -->
+                    <div class="miniatury">
+                        <!-- wymagany JavaScript do uruchomienia (skrypt nizej) -->
+                        <img src="images/o1.jpg" alt="slajd1" width="300">
+                        <img src="images/o2.jpg" alt="slajd2" width="300">
+                        <img src="images/o6.jpg" alt="slajd3" width="300">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        
+        <script>
+            $(function(){
+                //klik na miniaturce-pokaż okno modalne
+                $('.miniatury img').on('click',function(){
+                    $("#bigPicture").modal( {show:true} );//pobierz okienko modalne i pokaż je
+                    //alert(this.src);
+                    $("#bigPicture_img").attr('src', this.src );
+                    
+                });//pokazywanie okna
+            });
+        </script>
+        
+    </body>
+</html>

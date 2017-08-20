@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pierwszy bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="container">
+            <h2>Menu rozwijane</h2>
+            <hr/>
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <h3>Menu rozwijane (powtorka).</h3>
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Przycisk z menu rozwijanym  <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Wybierz mnie</a></li>
+                                        <li><a href="#">Kliknij tutaj</a></li>
+                                        <li><a href="#">Zrób coś</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Zakończ</a></li>
+                                        <li class="divider"></li>
+                                    </ul>
+                    </div>
+                    <h3>Link z menu rozwijanym</h3>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle btn-link" data-toggle="dropdown">Link z menu rozwijanym.<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="http://www.allegro.pl">Allegro.pl</a></li>
+                            <li><a href="http://www.amazon.com">Amazon.com</a></li>
+                        </ul>
+                    </div>
+                    <h3>Przycisk podzielony z menu (i toolbar).</h3>
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Informacja</button>
+                            <button type="button" class="btn btn-danger">Akcja</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Akcja 1</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Akcja 2</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Wcisnij 1</button>
+                            <button type="button" class="btn btn-primary">Wcisnij 2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>
