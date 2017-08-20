@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pierwszy bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <hr/>
+            <h2>Formularze</h2>
+            <div class="row">
+                
+                <div class="col-lg-8">
+                    
+                    <form action="przetwarzaj.php" method="post" role="form">
+                        <fieldset>
+                            <legend>Wypełnij żeby sie z nami skontaktować.</legend>
+                            <div class="form-group">
+                                <label  for="formImie">Imię</label> <input type="text" id="formImie" name="formImie" class="form-control input-lg">
+                            </div>
+                            <div class="form-group">
+                                <label for="formNazwisko">Nazwisko</label> <input type="text" id="formNazwisko" name="formNazwisko" class="form-control input-lg">
+                            </div>
+                            <div class="form-group">
+                                <label for="formWyksztalcenie">Wykształcenie</label>
+                                <select name="formWyksztalcenie" id="formWyksztalcenie" class="form-control input-sm">
+                                <option>Wyższe</option>
+                                <option>Średnie</option>
+                                <option>Niższe</option>
+                                <option>Nie powiem</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="chkSalata" id="chkSalata">Lubię sałatę</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="chkMarchew" id="chkMarchew">Lubię marchew</label>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Twoje ulubione groźne zwierzę</legend>
+                            
+                            <div class="radio">
+                                <label><input type="radio" name="group1" value="Krokodyl" id="formRadioKrokodyl">Krokodyl</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="group1" value="Motyl" id="formRadioMotyl">Motyl</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="group1" value="Żmija" id="formRadioZmija">Żmija</label>
+                            </div>
+                            
+                            <label for="area">Opisz siebie</label>
+                            <textarea id="area" name="area" class="form-control"></textarea>
+                            <br/>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary">Prześlij dane</button>
+                        
+                    </form>
+                    
+                </div>
+                <div>
+                    <span class="glyphicon glyphicon-star-empty"> </span><input type="text" placeholder="wprowadź kod">
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plu>
+gins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        
+        
+    </body>
+</html>

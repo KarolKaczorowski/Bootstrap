@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pierwszy bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Karuzela</h2>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div id="karuzela1" class="carousel slide" data-interval="2000" data-pause="hover" data-wrap="true">
+                        <!-- wskaźniki slajdów(kropki) -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#karuzela1" data-slide-to="0" class="active"></li>
+                            <li data-target="#karuzela1" data-slide-to="1"></li>
+                            <li data-target="#karuzela1" data-slide-to="2"></li>
+                        </ol>
+                    <!-- Slajdy -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/o1.jpg" alt="slajd1">
+                            <!-- Opis slajdu -->
+                            <div class="carousel-caption">
+                                <h3>To jest opis</h3>
+                                <p>pierwszego slajdu</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/o2.jpg" alt="slajd2">
+                            <!-- Opis slajdu -->
+                            <div class="carousel-caption">
+                                <h3>To jest opis</h3>
+                                <p>drugiego slajdu</p>
+                            </div>
+                       </div>
+
+                        <div class="item">
+                            <img src="images/o6.jpg" alt="slajd3">
+                            <!-- Opis slajdu -->
+                            <div class="carousel-caption">
+                                <h3>To jest opis</h3>
+                                <p>trzeciego slajdu</p>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Strzałki do przewijania -->
+                        <a class="left carousel-control" href="#karuzela1" data-slide="prev">
+                          <!--  <span class="icon-prev"></span>  -->
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#karuzela1" data-slide="next">
+                             <!--  <span class="icon-next"></span>  -->
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div><!--koniec karuzeli-->
+                    <hr/>
+                    <div class="alert alert-info">Karuzela z 3 obrazków.</div>
+                </div><!--koniec 9 kolumn-->
+                <aside class="col-lg-3">
+                    <p>Karuzela w 9 kolumnach i 3-kolumnowy ASIDE</p>
+                    <p>Karuzela zawiera strzałki w prawo oraz lewo, wskaźnik slajdu oraz tytuł slajdu.</p>
+                    <p><strong>Uruchamiana jedną linijką JavaScript.</strong></p>
+                </aside>
+            </div>
+        </div>
+        
+        
+        
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        
+        <script>
+            $('carousel').carousel('cycle');
+        </script>
+
+    </body>
+</html>
